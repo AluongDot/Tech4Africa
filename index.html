@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech4Africa - Unlock Your Digital Future</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <!-- removed the icon -->
+                <span>Tech4Africa</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#courses" class="nav-link">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#stories" class="nav-link">Stories</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title fade-in">Unlock Your Digital Future in Africa</h1>
+            <p class="hero-subtitle fade-in">Empowering African youth with cutting-edge digital skills, innovation opportunities, and tech entrepreneurship resources.</p>
+            <div class="hero-buttons fade-in">
+                <a href="#courses" class="btn btn-primary">Start Learning</a>
+                <a href="#contact" class="btn btn-secondary">Join Community</a>
+            </div>
+            <div class="hero-stats fade-in">
+                <div class="stat">
+                    <h3>10,000+</h3>
+                    <p>Students Trained</p>
+                </div>
+                <div class="stat">
+                    <h3>50+</h3>
+                    <p>Free Courses</p>
+                </div>
+                <div class="stat">
+                    <h3>All Ccountries</h3>
+                    <p>African Countries</p>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="floating-elements">
+                <div class="floating-icon"><i class="fab fa-html5"></i></div>
+                <div class="floating-icon"><i class="fab fa-css3-alt"></i></div>
+                <div class="floating-icon"><i class="fab fa-js-square"></i></div>
+                <div class="floating-icon"><i class="fab fa-python"></i></div>
+                <div class="floating-icon"><i class="fas fa-mobile-alt"></i></div>
+                <div class="floating-icon"><i class="fas fa-chart-line"></i></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Tech4Africa</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Our Mission</h3>
+                    <p>Bridging the digital skills gap in Africa by providing accessible, high-quality tech education to empower the next generation of African innovators and entrepreneurs.</p>
+                    
+                    <h3>Our Vision</h3>
+                    <p>To see every young African equipped with digital skills in coding, digital marketing, UI/UX design, and innovation, creating a thriving tech ecosystem across the continent.</p>
+                    
+                    <div class="sdg-goals">
+                        <h3>Supporting UN SDGs</h3>
+                        <div class="sdg-items">
+                            <div class="sdg-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>SDG 4: Quality Education</span>
+                            </div>
+                            <div class="sdg-item">
+                                <i class="fas fa-briefcase"></i>
+                                <span>SDG 8: Decent Work & Economic Growth</span>
+                            </div>
+                            <div class="sdg-item">
+                                <i class="fas fa-lightbulb"></i>
+                                <span>SDG 9: Industry, Innovation & Infrastructure</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <h4>54%</h4>
+                        <p>Internet Penetration in Africa</p>
+                    </div>
+                    <div class="stat-card">
+                        <h4>60%</h4>
+                        <p>Youth Population under 25</p>
+                    </div>
+                    <div class="stat-card">
+                        <h4>20%</h4>
+                        <p>Youth Unemployment Rate</p>
+                    </div>
+                    <div class="stat-card">
+                        <h4>$180B</h4>
+                        <p>Digital Economy Potential by 2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses">
+        <div class="container">
+            <h2 class="section-title">Courses & Resources</h2>
+            
+            <div class="course-filters">
+                <button class="filter-btn active" data-filter="all">All Courses</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+                <button class="filter-btn" data-filter="design">UI/UX Design</button>
+                <button class="filter-btn" data-filter="marketing">Digital Marketing</button>
+                <button class="filter-btn" data-filter="data">Data Science</button>
+            </div>
+
+            <div class="search-bar">
+                <input type="text" id="courseSearch" placeholder="Search courses...">
+                <i class="fas fa-search"></i>
+            </div>
+
+            <div class="courses-grid" id="coursesGrid">
+                <!-- Courses will be dynamically populated by JavaScript -->
+            </div>
+
+            <div class="resources-section">
+                <h3>Free Resources</h3>
+                <div class="resources-grid">
+                    <div class="resource-card">
+                        <i class="fas fa-file-pdf"></i>
+                        <h4>Getting Started in Coding</h4>
+                        <p>Complete beginner's guide to programming fundamentals</p>
+                        <a href="#" class="btn btn-outline">Download PDF</a>
+                    </div>
+                    <div class="resource-card">
+                        <i class="fas fa-video"></i>
+                        <h4>Web Development Roadmap</h4>
+                        <p>Step-by-step path to becoming a web developer</p>
+                        <a href="#" class="btn btn-outline">Watch Video</a>
+                    </div>
+                    <div class="resource-card">
+                        <i class="fas fa-book"></i>
+                        <h4>Tech Interview Guide</h4>
+                        <p>Prepare for your first tech job interview</p>
+                        <a href="#" class="btn btn-outline">Read Guide</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stories Section -->
+    <section id="stories" class="stories">
+        <div class="container">
+            <h2 class="section-title">Innovation Stories</h2>
+            <p class="section-subtitle">Meet the African innovators and startups changing the world</p>
+            
+            <div class="stories-grid" id="storiesGrid">
+                <!-- Stories will be dynamically populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Join Our Community</h2>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                            <span class="error-message" id="phoneError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="interest">Area of Interest</label>
+                            <select id="interest" name="interest" required>
+                                <option value="">Select an area</option>
+                                <option value="web">Web Development</option>
+                                <option value="mobile">Mobile Development</option>
+                                <option value="design">UI/UX Design</option>
+                                <option value="marketing">Digital Marketing</option>
+                                <option value="data">Data Science</option>
+                                <option value="entrepreneurship">Tech Entrepreneurship</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message (Optional)</label>
+                            <textarea id="message" name="message" rows="4"></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">Subscribe to our newsletter for updates and opportunities</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Join Community</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>hello@tech4africa.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+254 700 123 456</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Nairobi, Kenya & across Africa</span>
+                    </div>
+                    
+                    <div class="tech-hubs-map">
+                        <h4>Tech Hubs Across Africa</h4>
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.819936363239!2d36.82194931475853!3d-1.2920659990516158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d22c7c2b7b%3A0x8c7d5b6b0b9b4b4b!2sNairobi%2C%20Kenya!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus"
+                            width="100%" 
+                            height="250" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <!-- removed the icon from footer logo too -->
+                    <h3>Tech4Africa</h3>
+                    <p>Empowering African youth with digital skills for a brighter future.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#stories">Stories</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Free Courses</a></li>
+                        <li><a href="#">Coding Bootcamps</a></li>
+                        <li><a href="#">Career Guidance</a></li>
+                        <li><a href="#">Mentorship Program</a></li>
+                        <li><a href="#">Tech Events</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Community Forum</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Scholarships</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Tech4Africa. All rights reserved. Built with ❤️ for Africa's digital future.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <i class="fas fa-check-circle"></i>
+            <h3>Welcome to Tech4Africa!</h3>
+            <p>Thank you for joining our community. We'll be in touch soon with exciting opportunities!</p>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
